@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEC_STRAT | Cybersecurity & Crypto Strategist</title>
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+        @theme {
+            --font-sans: "Geist", sans-serif;
+            --font-mono: "Geist Mono", monospace;
+            --color-background: #1a1b1e; /* Charcoal background */
+            --color-foreground: #f2f2f2;
+            --color-primary: #10b981; /* Emerald green accent */
+            --color-primary-foreground: #1a1b1e;
+            --color-secondary: #2c2d31;
+            --color-muted-foreground: #a1a1aa;
+            --color-card: #222326;
+            --color-border: #333438;
+        }
+
+        @layer base {
+            body {
+                @apply bg-background text-foreground font-sans antialiased;
+            }
+        }
+
+        .hero-pattern {
+            background-image: linear-gradient(to right, #80808012 1px, transparent 1px), 
+                              linear-gradient(to bottom, #80808012 1px, transparent 1px);
+            background-size: 40px 40px;
+            mask-image: radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
+        <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="font-mono font-bold text-primary tracking-tighter text-xl">> SEC_STRAT</div>
+            <div class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#hero" class="hover:text-primary transition-colors">Home</a>
+                <a href="#skills" class="hover:text-primary transition-colors">Skills</a>
+                <a href="#experience" class="hover:text-primary transition-colors">Experience</a>
+                <a href="#education" class="hover:text-primary transition-colors">Education</a>
+                <a href="#booking" class="hover:text-primary transition-colors">Consultation</a>
+            </div>
+            <button class="text-sm font-medium border border-primary text-primary px-4 py-2 rounded-md hover:bg-primary/10 transition-colors">
+                Get in Touch
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="py-24 md:py-32 relative overflow-hidden">
+            <div class="absolute inset-0 hero-pattern"></div>
+            <div class="container mx-auto px-4 relative z-10 text-center">
+                <span class="inline-block mb-4 border border-primary/30 text-primary/80 px-4 py-1 rounded-full bg-primary/5 text-sm">
+                    Available for Consultations
+                </span>
+                <h1 class="text-4xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
+                    Securing Assets.<br>
+                    Analyzing Markets.
+                </h1>
+                <p class="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
+                    200L FUNAAB student, Junior Cybersecurity Analyst, and Crypto Strategist focused on defensive infrastructure and on-chain intelligence.
+                </p>
+                <div class="flex flex-col sm:row items-center justify-center gap-4">
+                    <button class="bg-primary text-primary-foreground font-bold px-8 py-3 rounded-md hover:opacity-90 transition-opacity">
+                        View Projects
+                    </button>
+                    <button class="border border-foreground/10 px-8 py-3 rounded-md hover:bg-foreground/5 transition-colors">
+                        Download CV
+                    </button>
+                </div>
+
+                <div class="mt-16 flex justify-center gap-6 text-muted-foreground">
+                    <i data-lucide="twitter" class="w-5 h-5 cursor-pointer hover:text-primary"></i>
+                    <i data-lucide="github" class="w-5 h-5 cursor-pointer hover:text-primary"></i>
+                    <i data-lucide="mail" class="w-5 h-5 cursor-pointer hover:text-primary"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-24 bg-secondary/30">
+            <div class="container mx-auto px-4">
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-4 flex items-center gap-2">
+                        <i data-lucide="terminal" class="text-primary w-8 h-8"></i>
+                        Technical Competencies
+                    </h2>
+                    <div class="h-1 w-20 bg-primary rounded"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Network Security -->
+                    <div class="bg-card p-6 rounded-xl border border-white/5 hover:border-primary/30 transition-all group">
+                        <i data-lucide="network" class="w-10 h-10 text-primary mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Network Security</h3>
+                        <p class="text-sm text-muted-foreground mb-4">Defensive operations and monitoring</p>
+                        <ul class="space-y-2 text-sm text-muted-foreground">
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div>Packet Analysis (Wireshark)</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div>Linux Systems Admin</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div>Traffic Monitoring</li>
+                        </ul>
+                    </div>
+                    <!-- Digital Assets -->
+                    <div class="bg-card p-6 rounded-xl border border-white/5 hover:border-primary/30 transition-all group">
+                        <i data-lucide="database" class="w-10 h-10 text-primary mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Digital Assets</h3>
+                        <p class="text-sm text-muted-foreground mb-4">Market analysis and on-chain metrics</p>
+                        <ul class="space-y-2 text-sm text-muted-foreground">
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div>Advanced Technical Analysis</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div>On-chain Data Visualization</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div>Defi Ecosystem Auditing</li>
+                        </ul>
+                    </div>
+                    <!-- Infrastructure -->
+                    <div class="bg-card p-6 rounded-xl border border-white/5 hover:border-primary/30 transition-all group">
+                        <i data-lucide="shield" class="w-10 h-10 text-primary mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Infrastructure</h3>
+                        <p class="text-sm text-muted-foreground mb-4">Secure storage and asset protection</p>
+                        <ul class="space-y-2 text-sm text-muted-foreground">
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div>Air-gapped Cold Storage</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div>Multi-signature Architect</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div>Operational Security (OpSec)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-24">
+            <div class="container mx-auto px-4">
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-4 flex items-center gap-2">
+                        <i data-lucide="briefcase" class="text-primary w-8 h-8"></i>
+                        Professional Trajectory
+                    </h2>
+                    <div class="h-1 w-20 bg-primary rounded"></div>
+                </div>
+
+                <div class="space-y-12 max-w-3xl">
+                    <div class="relative pl-8 border-l border-primary/20">
+                        <div class="absolute -left-[5px] top-0 w-[9px] h-[9px] rounded-full bg-primary"></div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold">Operations Lead</h3>
+                            <span class="text-xs text-primary font-mono bg-primary/10 px-2 py-1 rounded">2023 — Present</span>
+                        </div>
+                        <p class="text-muted-foreground mb-4">
+                            Orchestrated daily logistics and resource allocation for a team of 50+ individuals. Streamlined internal communications and ensured operational efficiency across multiple departments.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] uppercase tracking-widest bg-white/5 px-2 py-1 rounded">Management</span>
+                            <span class="text-[10px] uppercase tracking-widest bg-white/5 px-2 py-1 rounded">Logistics</span>
+                            <span class="text-[10px] uppercase tracking-widest bg-white/5 px-2 py-1 rounded">Leadership</span>
+                        </div>
+                    </div>
+
+                    <div class="relative pl-8 border-l border-primary/20">
+                        <div class="absolute -left-[5px] top-0 w-[9px] h-[9px] rounded-full bg-primary"></div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold">Independent Crypto Trader</h3>
+                            <span class="text-xs text-primary font-mono bg-primary/10 px-2 py-1 rounded">2021 — 2023</span>
+                        </div>
+                        <p class="text-muted-foreground mb-4">
+                            Managed diverse digital asset portfolios with a focus on strict risk management and capital preservation. Utilized proprietary technical indicators to navigate volatile market cycles.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] uppercase tracking-widest bg-white/5 px-2 py-1 rounded">Risk Management</span>
+                            <span class="text-[10px] uppercase tracking-widest bg-white/5 px-2 py-1 rounded">Market Analysis</span>
+                            <span class="text-[10px] uppercase tracking-widest bg-white/5 px-2 py-1 rounded">Trading</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certs -->
+        <section id="education" class="py-24 bg-secondary/30">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <div class="mb-8">
+                            <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                                <i data-lucide="graduation-cap" class="text-primary w-6 h-6"></i>
+                                Academic Foundation
+                            </h2>
+                            <div class="h-1 w-12 bg-primary rounded"></div>
+                        </div>
+                        <div class="bg-card p-6 rounded-lg border border-white/5">
+                            <h3 class="text-lg font-bold">B.Agric</h3>
+                            <p class="text-primary text-sm font-mono mb-2">FUNAAB</p>
+                            <p class="text-sm text-muted-foreground">
+                                Currently in 200 Level, applying analytical methodologies from agricultural sciences to digital ecosystems.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="mb-8">
+                            <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                                <i data-lucide="award" class="text-primary w-6 h-6"></i>
+                                Certifications
+                            </h2>
+                            <div class="h-1 w-12 bg-primary rounded"></div>
+                        </div>
+                        <div class="bg-card p-6 rounded-lg border border-white/5 flex items-center gap-4 group cursor-pointer hover:border-primary/20 transition-colors">
+                            <div class="p-3 bg-primary/10 rounded group-hover:bg-primary/20 transition-colors">
+                                <i data-lucide="cpu" class="w-8 h-8 text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold">TryHackMe Certification</h3>
+                                <p class="text-sm text-muted-foreground">
+                                    Proficiency in network security, web app security, and offensive security fundamentals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking" class="py-24">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">Secure a Strategy Session</h2>
+                    <p class="text-muted-foreground">Book a consultation for cybersecurity audits or crypto market strategy analysis.</p>
+                </div>
+
+                <div class="bg-card rounded-2xl border border-white/5 overflow-hidden shadow-2xl max-w-4xl mx-auto">
+                    <div class="aspect-video w-full bg-secondary/50 flex flex-col items-center justify-center p-8 text-center relative">
+                        <i data-lucide="calendar" class="w-16 h-16 text-primary mb-4 opacity-20"></i>
+                        <p class="text-sm font-mono text-primary/60 mb-8 uppercase tracking-widest">Initialization of Scheduling System</p>
+                        
+                        <div class="w-full max-w-xl bg-background/50 backdrop-blur-sm border border-white/10 p-6 rounded-xl grid grid-cols-7 gap-2 mb-8">
+                            <!-- Simulated calendar grid -->
+                            <script>
+                                for (let i = 1; i <= 28; i++) {
+                                    const activeClass = i === 14 ? 'bg-primary text-primary-foreground border-primary' : 'border-white/5 text-muted-foreground hover:border-primary/50';
+                                    document.write(`<div class="aspect-square rounded flex items-center justify-center text-[10px] border transition-colors cursor-pointer ${activeClass}">${i}</div>`);
+                                }
+                            </script>
+                        </div>
+
+                        <button class="bg-primary text-primary-foreground font-bold px-6 py-2 rounded-md hover:opacity-90 transition-opacity inline-flex items-center gap-2">
+                            Open Full Calendar <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 border-t border-border bg-secondary/20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="font-mono font-bold text-primary mb-6 tracking-tighter">> SEC_STRAT.END_OF_PAGE</div>
+            <p class="text-sm text-muted-foreground">
+                © 2026 Cybersecurity & Crypto Strategist Portfolio. Built for high-integrity asset management.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
